@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="radio" id="gendermale" name="gender">Male
+    <input type="radio" id="genderfemale" name="gender">Female
+
+    <button onclick="store()">Submit</button>
+    <script>
+        function store(){
+            var Gender = document.getElementById("gendermale").checked
+            var Gender1 = document.getElementById("genderfemale").checked
+
+            var gender;
+            if(Gender==true)
+                gender="Male"
+            else if(Gender1==true)
+                gender="Female"
+            else
+                gender=null
+            console.log(gender)
+        }
+    </script>
+
+    <!-- <input type="password" placeholder="Enter password" id="password">
+    <button onclick="store()">Submit</button>
+
+    <script>
+        function store(){
+            var p = document.getElementById("password").value
+            console.log(p)
+        }
+    </script> -->
+
+    <!-- <button onclick="demo()">Click me</button>
+    <script>
+        function demo(){
+            alert("Hello World")
+        }
+    </script> -->
+</body>
+</html>
